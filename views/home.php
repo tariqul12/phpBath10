@@ -1,6 +1,6 @@
 <?php include "header.php"; ?>
 <header>
-  <div class="container">
+  <div class="container demo">
     <div class="row">
       <div class="col-3 h-200">logo</div>
       <div class="col-9 h-200">Banner</div>

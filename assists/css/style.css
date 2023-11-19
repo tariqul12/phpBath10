@@ -41,9 +41,12 @@
 
 }
 /*media query*/
-@media screen and (max-width: 750px)
+@media screen and (max-width: 550px)
 {
     .demo{
-        background-color: red;
+        background-color: tomato;
+    }
+    [class*="col-"]{
+        width: 100%;
     }
 }
