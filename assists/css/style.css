@@ -41,6 +41,9 @@
 
 }
 /*media query*/
-@media {
-
+@media screen and (max-width: 750px)
+{
+    .demo{
+        background-color: red;
+    }
 }
