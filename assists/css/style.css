@@ -18,10 +18,10 @@
 .col-12{width: 100%;}
 
 
-[class*='col-']{
-    float: left;
-    border:1px solid gray;
-}
+/*[class*='col-']{*/
+/*    float: left;*/
+/*    border:1px solid gray;*/
+/*}*/
 .h-40{ height: 40px; }
 .h-50{ height: 50px }
 .h-200{ height: 200px }
