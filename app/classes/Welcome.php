@@ -8,7 +8,7 @@ use App\classes\student;
 
 class Welcome
 {
-    public $student, $students, $message,$singleStudent , $i, $data = [], $firstName, $lastName, $fastNumber, $secoundNumber, $result; // property
+    public $student,$fullName, $students, $message,$singleStudent , $i, $data = [], $firstName, $lastName, $fastNumber, $secoundNumber, $result; // property
 
     public function __construct() // method or function
     {
@@ -43,7 +43,10 @@ class Welcome
     }
 
  public function makeFullName(){
-        echo "hello";
+//        echo "<pre>";
+//        print_r($_POST);
+     $this->fullName=$_POST['first_name'].' '.$_POST['last_name'];
+     header("Location: web.php?page=about&&result=$this->fullName");
  }
 
 

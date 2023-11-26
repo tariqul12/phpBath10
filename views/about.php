@@ -23,7 +23,7 @@
                 <div class="row mb-3">
                   <label for="" class="col-lg-3">Full Name</label>
                   <div class="col-lg-9">
-                    <input type="text"  class="form-control" />
+                    <input type="text" value="<?php echo isset($_GET["result"]) ? $_GET["result"] : ""; ?>" class="form-control" />
                   </div>
                 </div>
                 <div class="row mb-3">
