@@ -14,7 +14,7 @@
             <h4><?php echo $student["mobile"] ?></h4>
             <h4><?php echo $student["email"] ?></h4>
             <hr>
-            <a href="web.php?page=detail" class="btn btn-success">detail</a>
+            <a href="web.php?page=detail&&id=<?php echo $student["id"] ?>" class="btn btn-success">detail</a>
           </div>
         </div>
       </div>

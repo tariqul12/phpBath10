@@ -16,7 +16,11 @@ class Student
                 'name'=>'robiul islam',
                 'email'=>'robiul@gmail.com',
                 'mobile' => '11223344',
-                "image" => "assists/img/1.jpg"
+                'roll' => '65',
+                "image" => "assists/img/1.jpg",
+                "detail" =>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+",
             ],
 
             1=>[
@@ -24,7 +28,11 @@ class Student
                 'name'=>'abul kalam',
                 'email'=>'kalam@gmail.com',
                 'mobile' => '35346353',
-                "image" => "assists/img/2.jpg"
+                'roll' => '33',
+                "image" => "assists/img/2.jpg",
+                "detail" =>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+",
             ],
 
             2=>[
@@ -32,7 +40,11 @@ class Student
                 'name'=>'sonia Rahaman islam',
                 'email'=>'sonia@gmail.com',
                 'mobile' => '11456644',
-                "image" => "assists/img/3.jpg"
+                'roll' => '12',
+                "image" => "assists/img/3.jpg",
+                "detail" =>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+",
             ],
 
             3=>[
@@ -40,21 +52,33 @@ class Student
                 'name'=>'abdul mia',
                 'email'=>'abdul@gmail.com',
                 'mobile' => '54532346',
-                "image" => "assists/img/4.jpg"
+                'roll' => '34',
+                "image" => "assists/img/4.jpg",
+                "detail" =>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+",
             ],
             4=>[
-                'id' =>4,
+                'id' =>5,
                 'name'=>'abdul mia',
                 'email'=>'abdul@gmail.com',
                 'mobile' => '54532346',
-                "image" => "assists/img/5.jpg"
+                'roll' => '55',
+                "image" => "assists/img/5.jpg",
+                  "detail" =>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+",
             ],
             5=>[
-                'id' =>4,
+                'id' =>6,
                 'name'=>'rohim mia',
                 'email'=>'abdul@gmail.com',
                 'mobile' => '54532346',
-                "image" => "assists/img/1.jpg"
+                'roll' => '54',
+                "image" => "assists/img/1.jpg",
+                "detail" =>"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+
+",
             ],
         ];
 
@@ -64,6 +88,15 @@ class Student
     {
         return $this->students;
 
+    }
+    public function getStudentById($id){
+        foreach ($this->students as $student)
+        {
+            if ($student["id"] == $id)
+            {
+                return $student;
+            }
+        }
     }
 
 

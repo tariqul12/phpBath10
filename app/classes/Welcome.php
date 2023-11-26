@@ -8,7 +8,7 @@ use App\classes\student;
 
 class Welcome
 {
-    public $student, $students, $message, $i, $data = [], $firstName, $lastName, $fastNumber, $secoundNumber, $result; // property
+    public $student, $students, $message,$singleStudent , $i, $data = [], $firstName, $lastName, $fastNumber, $secoundNumber, $result; // property
 
     public function __construct() // method or function
     {
@@ -36,10 +36,15 @@ class Welcome
         return view('contact');
     }
 
-    public function detail(){
-        return view("detail");
+    public function detail($id){
+        $this->student=new student();
+        $this->singleStudent = $this->student->getStudentById($id);
+        return view("detail", ['student' =>$this->singleStudent]);
     }
 
+ public function makeFullName(){
+        echo "hello";
+ }
 
 
 
